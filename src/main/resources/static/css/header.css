@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.inner {
+  width: 1800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+header {
+  /* background-color: #EEEEEE; */
+  border-bottom: 1.5px solid #4E9F3D;
+  height: 140px;
+  font-family: "Nanum Gothic";
+  font-weight: 600;
+}
+header .head {
+  height: 80px;
+}
+header .head .logo{
+  position: absolute;
+  top: 40px;
+  left: 70px;
+}
+header .head .logo .logo__text {
+  font-size: 48px;
+  font-family: "Do Hyeon";
+  color: #519259;
+  margin: auto;
+  cursor: pointer;
+}
+header .head .search {
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 40%;
+}
+header .head .search input {
+  margin-right: -5px;
+}
+header .search .material-icons { 
+  cursor: pointer;
+}
+header .head .account {
+  position: absolute;
+  bottom: 20px;
+  right: 200px;
+  font-size: 18px;
+  display: flex;
+}
+header .head .account div {
+  cursor: pointer;
+}
+header .head .account div:hover {
+  text-decoration: underline;
+}
+/* header .head .account .account__sign-in { } */
+header .head .account .account__sign-up {
+  margin-left: 30px;
+}
+header nav {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+header nav > ul {
+  height: 100%;
+  display: flex;
+  padding: 0;
+}
+header nav > ul > li {
+  padding: 20px 50px;
+  list-style: none;
+  font-size: 18px;
+  cursor: pointer;
+  border: 1px solid #4E9F3D;
+}
+header nav > ul > li:hover {
+  background-color: #4E9F3D;
+  color: #F7F7F7;
+}
+header nav > ul > li:first-child {
+  border-top-left-radius: 10px;
+}
+header nav > ul > li:last-child {
+  border-top-right-radius: 10px;
+}

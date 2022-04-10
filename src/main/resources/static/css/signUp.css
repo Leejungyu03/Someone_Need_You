@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  color: #333;
+}
+.inner {
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sign-up {
+  width: 500px;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 2px solid #4E9F3D;
+  box-sizing: border-box;
+}
+.sign-up .logo{
+  width: 390px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.sign-up .logo .logo__text {
+  font-size: 48px;
+  font-family: "Do Hyeon";
+  color: #519259;
+  margin: auto;
+}
+.sign-up .input-info {
+  margin-top: 30px;
+}
+/* .sign-up .input-info nav { } */
+.sign-up .input-info nav > ul {
+  display: flex;
+  padding: 0;
+}
+.sign-up .input-info nav > ul > li {
+  width: 50%;
+  padding: 20px 0;
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sign-up .input-info nav > ul > li:first-child {
+  background-color: #519259;
+  color: #fff;
+}
+.sign-up .input-info .user {
+  margin-top: 60px;
+}
+.sign-up .input-info .user .inner div {
+  margin-top: 40px;
+}
+.sign-up .input-info .user input{
+  height: 50px;
+  background-color: #EEEEEE;
+}
+.sign-up .input-info .user .loginId-user {
+  display: flex;
+}
+.sign-up .input-info .user .loginId-user button {
+  background-color: #4E9F3D;
+  margin-left: 5px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 35px;
+  transition: all 0s;
+}
+.sign-up .input-info .user input[type="button"] {
+  height: 40px;
+  margin-top: 40px;
+  padding: 0 145px;
+  background-color: #4E9F3D;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0s;
+  display: flex;
+}
+
+.sign-up .input-info .company {
+  display: none;
+  margin-top: 60px;
+}
+.sign-up .input-info .company .inner div {
+  margin-top: 40px;
+}
+.sign-up .input-info .company input{
+  height: 50px;
+  background-color: #EEEEEE;
+}
+.sign-up .input-info .company .loginId-company {
+  display: flex;
+}
+.sign-up .input-info .company .loginId-company button {
+  background-color: #FEB139;
+  margin-left: 5px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 35px;
+  transition: all 0s;
+}
+.sign-up .input-info .company input[type="button"] {
+  height: 40px;
+  margin-top: 40px;
+  padding: 0 145px;
+  background-color: #FEB139;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0s;
+  display: flex;
+}

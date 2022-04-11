@@ -43,20 +43,22 @@
         <div class="inner">
 
           <div class="loginId-user">
-            <input type="text" class="form-control" placeholder="아이디를 입력하세요">
+            <input type="text" id="loginIdUser" class="form-control" placeholder="아이디를 입력하세요">
             <button id="is_duplicated_user" class="btn">중복확인</button>
           </div>
+          <div class="idCheckDuplicatedUser d-none">이미 사용중인 ID입니다.</div>
+          <div class="idCheckOkUser d-none">사용 가능한 ID입니다</div>
           <div class="password-user">
-            <input type="password" class="form-control" placeholder="비밀번호를 입력하세요">
+            <input type="password" id="passwordUser" class="form-control" placeholder="비밀번호를 입력하세요">
           </div>
           <div class="name-user">
-            <input type="text" class="form-control" placeholder="이름을 입력하세요">
+            <input type="text" id="nameUser" class="form-control" placeholder="이름을 입력하세요">
           </div>
           <div class="email-user">
-            <input type="text" class="form-control" placeholder="이메일을 입력하세요">
+            <input type="text" id="emailUser" class="form-control" placeholder="이메일을 입력하세요">
           </div>
 
-          <input id="signUpBtnUser" type="button" class="btn" value="회원가입">
+          <input id="signUp_user_btn" type="button" class="btn" value="회원가입">
 
         </div>
       </div>
@@ -65,20 +67,22 @@
         <div class="inner">
 
           <div class="loginId-company">
-            <input type="text" class="form-control" placeholder="아이디를 입력하세요">
-            <button id="is_duplicated_user" class="btn">중복확인</button>
+            <input type="text" id="loginIdCompany" class="form-control" placeholder="아이디를 입력하세요">
+            <button id="is_duplicated_company" class="btn">중복확인</button>
           </div>
+          <div class="idCheckDuplicatedCompany d-none">이미 사용중인 ID입니다.</div>
+          <div class="idCheckOkUserCompany d-none">사용 가능한 ID입니다</div>
           <div class="password-company">
-            <input type="password" class="form-control" placeholder="비밀번호를 입력하세요">
+            <input type="password" id="passwordComapny" class="form-control" placeholder="비밀번호를 입력하세요">
           </div>
           <div class="name-company">
-            <input type="text" class="form-control" placeholder="회사명을 입력하세요">
+            <input type="text" id="nameComapny" class="form-control" placeholder="회사명을 입력하세요">
           </div>
           <div class="email-company">
-            <input type="text" class="form-control" placeholder="회사 이메일을 입력하세요">
+            <input type="text" id="emailComapny" class="form-control" placeholder="회사 이메일을 입력하세요">
           </div>
 
-          <input id="signUpBtnCompany" type="button" class="btn" value="회원가입">
+          <input id="signUp_company_btn" type="button" class="btn" value="회원가입">
 
         </div>
       </div>

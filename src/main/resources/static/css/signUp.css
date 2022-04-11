@@ -74,6 +74,16 @@ body {
   line-height: 35px;
   transition: all 0s;
 }
+.sign-up .input-info .user .idCheckDuplicated {
+	color: #E83A14;
+	position: absolute;
+	top: 15px;
+}
+.sign-up .input-info .user .idCheckOk {
+	color: #4E9F3D;
+	position: absolute;
+	top: 15px;
+}
 .sign-up .input-info .user input[type="button"] {
   height: 40px;
   margin-top: 40px;

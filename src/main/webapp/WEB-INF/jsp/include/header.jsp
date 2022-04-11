@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <header>
 	<div class="inner">
@@ -12,12 +13,30 @@
 			<div class="search input-group">
 				<input type="text" class="form-control">
 				<div class="material-icons input-group-text">search</div>
+				${userName}
+				${companyName}
 			</div>
-
-			<div class="account">
-				<div class="account__sign-in">로그인</div>
-				<div class="account__sign-up">회원가입</div>
-			</div>
+			
+			<c:choose>
+				<c:when test="${(not empty userName) && (not empty companyName)}">
+					<div class="account">
+						<div class="account__sign-in">로그인</div>
+						<div class="account__sign-up">회원가입</div>
+					</div>
+				</c:when>
+				<c:when test="${(not empty userName)}">
+					<div class="account-user">
+						<div class="account__userName">${userName}</div>
+						<div class="account__logout">로그아웃</div>
+					</div>
+				</c:when>
+				<c:otherwise>
+					<div class="account-company">
+						<div class="account__companyName">${companyName}</div>
+						<div class="account__logout">로그아웃</div>
+					</div>
+				</c:otherwise>
+			</c:choose>
 
 		</div>
 

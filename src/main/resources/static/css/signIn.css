@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   margin: 0;
   padding: 0;
@@ -11,9 +12,9 @@ body {
   position: relative;
 }
 
-.sign-up {
+.sign-in {
   width: 500px;
-  height: 700px;
+  height: 600px;
   background-color: #fff;
   border-radius: 10px;
   margin: 0 auto;
@@ -21,26 +22,26 @@ body {
   border: 2px solid #4E9F3D;
   box-sizing: border-box;
 }
-.sign-up .logo{
+.sign-in .logo{
   width: 390px;
   margin: 0 auto;
   margin-top: 20px;
 }
-.sign-up .logo .logo__text {
+.sign-in .logo .logo__text {
   font-size: 48px;
   font-family: "Do Hyeon";
   color: #519259;
   margin: auto;
 }
-.sign-up .input-info {
+.sign-in .input-info {
   margin-top: 30px;
 }
-/* .sign-up .input-info nav { } */
-.sign-up .input-info nav > ul {
+/* .sign-in .input-info nav { } */
+.sign-in .input-info nav > ul {
   display: flex;
   padding: 0;
 }
-.sign-up .input-info nav > ul > li {
+.sign-in .input-info nav > ul > li {
   width: 50%;
   padding: 20px 0;
   text-align: center;
@@ -49,24 +50,24 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-.sign-up .input-info nav > ul > li:first-child {
+.sign-in .input-info nav > ul > li:first-child {
   background-color: #519259;
   color: #fff;
 }
-.sign-up .input-info .user {
+.sign-in .input-info .user {
   margin-top: 60px;
 }
-.sign-up .input-info .user .inner div {
+.sign-in .input-info .user .inner div {
   margin-top: 40px;
 }
-.sign-up .input-info .user input{
+.sign-in .input-info .user input{
   height: 50px;
   background-color: #EEEEEE;
 }
-.sign-up .input-info .user .loginId-user {
+.sign-in .input-info .user .loginId-user {
   display: flex;
 }
-.sign-up .input-info .user .loginId-user button {
+.sign-in .input-info .user .loginId-user button {
   background-color: #4E9F3D;
   margin-left: 5px;
   font-weight: 600;
@@ -74,17 +75,7 @@ body {
   line-height: 35px;
   transition: all 0s;
 }
-.sign-up .input-info .user .idCheckDuplicatedUser {
-	color: #E83A14;
-	position: absolute;
-	top: 15px;
-}
-.sign-up .input-info .user .idCheckOkUser {
-	color: #4E9F3D;
-	position: absolute;
-	top: 15px;
-}
-.sign-up .input-info .user input[type="button"] {
+.sign-in .input-info .user input[type="button"] {
   height: 40px;
   margin-top: 40px;
   padding: 0 145px;
@@ -97,21 +88,21 @@ body {
   display: flex;
 }
 
-.sign-up .input-info .company {
+.sign-in .input-info .company {
   display: none;
   margin-top: 60px;
 }
-.sign-up .input-info .company .inner div {
+.sign-in .input-info .company .inner div {
   margin-top: 40px;
 }
-.sign-up .input-info .company input{
+.sign-in .input-info .company input{
   height: 50px;
   background-color: #EEEEEE;
 }
-.sign-up .input-info .company .loginId-company {
+.sign-in .input-info .company .loginId-company {
   display: flex;
 }
-.sign-up .input-info .company .loginId-company button {
+.sign-in .input-info .company .loginId-company button {
   background-color: #FEB139;
   margin-left: 5px;
   font-weight: 600;
@@ -119,17 +110,7 @@ body {
   line-height: 35px;
   transition: all 0s;
 }
-.sign-up .input-info .company .idCheckDuplicatedCompany {
-	color: #E83A14;
-	position: absolute;
-	top: 15px;
-}
-.sign-up .input-info .company .idCheckOkUserCompany {
-	color: #FEB139;
-	position: absolute;
-	top: 15px;
-}
-.sign-up .input-info .company input[type="button"] {
+.sign-in .input-info .company input[type="button"] {
   height: 40px;
   margin-top: 40px;
   padding: 0 145px;

@@ -10,8 +10,8 @@ $(document).ready(function() {
 	$('#is_duplicated_user').on('click', () => {
 		
 		// 경고 문구 초기화
-		$('.idCheckDuplicatedUser').addClass('d-none');
-		$('.idCheckOkUser').addClass('d-none');
+		$('.idCheckDuplicatedUser').addClass('d-none')
+		$('.idCheckOkUser').addClass('d-none')
 		
 		let loginId = $('#loginIdUser').val().trim()
 		if (loginId == '') {
@@ -84,6 +84,10 @@ $(document).ready(function() {
 			success : function(data) {
 				if (data.result) {
 					alert("회원가입이 완료되었습니다. 로그인 해주세요")
+					$('#loginIdUser').val("")
+					$('#passwordUser').val("")
+					$('#nameUser').val("")
+					$('#emailUser').val("")
 					location.href = "/account/sign_in_view"
 				} else {
 					alert("회원가입에 실패하였습니다.")
@@ -174,6 +178,12 @@ $(document).ready(function() {
 			success : function(data) {
 				if (data.result) {
 					alert("회원가입이 완료되었습니다. 로그인 해주세요")
+					$('#loginIdCompany').val("")
+					$('#passwordComapny').val("")
+					$('#nameComapny').val("")
+					$('#emailComapny').val("")
+					$('.idCheckDuplicatedCompany').addClass('d-none');
+					$('.idCheckOkUserCompany').addClass('d-none');
 					location.href = "/account/sign_in_view"
 				} else {
 					alert("회원가입에 실패하였습니다.")

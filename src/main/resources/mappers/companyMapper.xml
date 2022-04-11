@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.SNY.account.dao.CompanyDAO">
+	<select id="existCompanyByLoginId" parameterType="string" resultType="int">
+		SELECT
+			COUNT(1)
+		FROM
+			`company`
+		WHERE
+			`loginId` = #{loginId}
+	</select>
+	
+	<select id="selectCompanyByLoginIdAndPassword" parameterType="map" resultType="com.SNY.account.model.Company">
+		SELECT
+			`id`
+			,`loginId`
+			,`password`
+			,`name`
+			,`email`
+			,`createdAt`
+			,`updatedAt`
+		FROM
+			`company`
+		WHERE
+				`loginId` = #{loginId}
+			AND
+				`password` = #{password}
+	</select>
+	
+	<insert id="selectSignUpCompany" parameterType="map">
+		INSERT INTO `company`
+		(
+			`loginId`
+			,`password`
+			,`name`
+			,`email`
+			,`createdAt`
+			,`updatedAt`
+		)
+		VALUES
+		(
+			#{loginId}
+			, #{password}
+			, #{name}
+			, #{email}
+			, NOW()
+			, NOW()
+		)
+	</insert>
+</mapper>

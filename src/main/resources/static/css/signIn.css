@@ -122,3 +122,9 @@ body {
   transition: all 0s;
   display: flex;
 }
+.sign-in .input-info .link-sign-up {
+	text-align: center;
+}
+.sign-in .input-info .link-sign-up a {
+	color: #3D56B2;
+}

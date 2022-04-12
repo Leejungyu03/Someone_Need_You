@@ -13,7 +13,7 @@ body {
 
 .sign-up {
   width: 500px;
-  height: 700px;
+  height: 730px;
   background-color: #fff;
   border-radius: 10px;
   margin: 0 auto;
@@ -140,4 +140,15 @@ body {
   text-align: center;
   transition: all 0s;
   display: flex;
+}
+.sign-up .input-info .user .inner .link-sign-in {
+	text-align: center;
+	margin-top: 25px;
+}
+.sign-up .input-info .company .inner .link-sign-in {
+	text-align: center;
+	margin-top: 25px;
+}
+.sign-up .input-info .link-sign-in a {
+	color: #3D56B2;
 }

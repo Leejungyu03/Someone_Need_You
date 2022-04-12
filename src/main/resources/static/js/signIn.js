@@ -6,7 +6,7 @@ $(document).ready(function() {
 	// 기업 회원 가입을 클릭
 	$('.list-company').on('click', () => changeColor("orange"))
 	
-	// User 회원 가입
+	// User 로그인
 	$('#signIn_user_btn').on('click', () => {
 		
 		let loginId = $('#loginIdUser').val().trim()
@@ -33,14 +33,14 @@ $(document).ready(function() {
 			processData : false,
 			contentType : false,
 			success : function(data) {
-				if (data.result) {
+				if (data.result == "success") {
 					alert(data.userName + "님 환영합니다.")
 					$('#loginIdUser').val("")
 					$('#passwordUser').val("")
 					location.href = "/main/notice_view"
 				} else {
 					alert(data.error_message)
-        }
+        		}
 			},
 			error : function(e) {
 				alert("오류입니다. 관리자에게 문의하세요")
@@ -50,7 +50,7 @@ $(document).ready(function() {
 	})
 
 	
-	// Comapny 회원가입
+	// Comapny 로그인
 	$('#signIn_company_btn').on('click', () => {
 		
 		let loginId = $('#loginIdCompany').val().trim()
@@ -77,13 +77,13 @@ $(document).ready(function() {
 			processData : false,
 			contentType : false,
 			success : function(data) {
-				if (data.result) {
+				if (data.result == "success") {
 					alert(data.companyName + "님 환영합니다.")
 					$('#loginIdCompany').val("")
 					$('#passwordComapny').val("")
 					location.href = "/main/notice_view"
 				} else {
-					alert(error_message)
+					alert(data.error_message)
 				}
 			},
 			error : function(e) {

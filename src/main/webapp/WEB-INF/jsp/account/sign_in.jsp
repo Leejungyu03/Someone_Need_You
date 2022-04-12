@@ -46,6 +46,8 @@
           </div>
 
           <input id="signIn_user_btn" type="button" class="btn" value="로그인">
+          
+          <div class="link-sign-up">계정 생성하기&nbsp;&nbsp;<a href="/account/sign_up_view">회원가입</a></div>
 
         </div>
       </div>
@@ -60,6 +62,8 @@
             <input type="password" id="passwordComapny" class="form-control" placeholder="비밀번호를 입력하세요">
           </div>
           <input id="signIn_company_btn" type="button" class="btn" value="로그인">
+          
+          <div class="link-sign-up">계정 생성하기&nbsp;&nbsp;<a href="/account/sign_up_view">회원가입</a></div>
 
         </div>
       </div>

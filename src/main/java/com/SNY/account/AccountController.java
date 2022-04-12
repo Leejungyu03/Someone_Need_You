@@ -20,7 +20,7 @@ public class AccountController {
 		return "account/sign_in";
 	}
 	
-	@RequestMapping("sign_out_user")
+	@RequestMapping("/sign_out_user")
 	public String userSignOut(HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		// 로그아웃 할때 모든것을 비워야함
@@ -31,7 +31,7 @@ public class AccountController {
 		return "redirect:/account/sign_in_view";
 	}
 	
-	@RequestMapping("sign_out_company")
+	@RequestMapping("/sign_out_company")
 	public String companySignOut(HttpServletRequest request) {
 		HttpSession session = request.getSession();
 		// 로그아웃 할때 모든것을 비워야함

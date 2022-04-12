@@ -59,7 +59,9 @@
           </div>
 
           <input id="signUp_user_btn" type="button" class="btn" value="회원가입">
-
+			
+		  <div class="link-sign-in">계정이 있으신가요?&nbsp;&nbsp;<a href="/account/sign_in_view">로그인</a></div>
+        
         </div>
       </div>
 
@@ -83,7 +85,9 @@
           </div>
 
           <input id="signUp_company_btn" type="button" class="btn" value="회원가입">
-
+          
+          <div class="link-sign-in">계정이 있으신가요?&nbsp;&nbsp;<a href="/account/sign_in_view">로그인</a></div>
+        
         </div>
       </div>
     </div>

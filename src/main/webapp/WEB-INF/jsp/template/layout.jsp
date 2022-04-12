@@ -23,13 +23,23 @@
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<!-- CSS -->
-	<link rel="stylesheet" href="/css/header.css">
-	<script type="text/javascript" defer="defer" src="/js/header.js"></script>
+	<link rel="stylesheet" href="/css/account/header_user.css">
+	<link rel="stylesheet" href="/css/account/header_company.css">
 </head>
 <body>
 	
+	<c:choose>
+		<c:when test="${(not empty userName)}">
+			<jsp:include page="../include/header_user.jsp"/>
+		</c:when>
+		<c:when test="${(not empty companyName)}">
+			<jsp:include page="../include/header_company.jsp"/>
+		</c:when>
+		<c:otherwise>
+			<jsp:include page="../include/header_user.jsp"/>
+		</c:otherwise>
+	</c:choose>
 	
-	<jsp:include page="../include/header.jsp"/>
 	<jsp:include page="../${viewName}.jsp"/>
 	
 </body>

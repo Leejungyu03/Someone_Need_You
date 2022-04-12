@@ -19,8 +19,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/signUp.css">
-  <script type="text/javascript" defer="defer" src="/js/signUp.js"></script>
+  <link rel="stylesheet" href="/css/account/signUp.css">
+  <script type="text/javascript" defer="defer" src="/js/account/signUp.js"></script>
 </head>
 <body>
   <div class="sign-up">

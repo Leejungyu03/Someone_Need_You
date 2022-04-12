@@ -15,8 +15,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/css/signIn.css">
-  <script defer src="/js/signIn.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/account/signIn.css">
+  <!-- JavaScript -->
+  <script defer src="/js/account/signIn.js"></script>
 </head>
 <body>
   <div class="sign-in">

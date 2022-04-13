@@ -25,6 +25,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="/css/account/header_user.css">
 	<link rel="stylesheet" href="/css/account/header_company.css">
+	<link rel="stylesheet" href="/css/user/mypage.css">
 </head>
 <body>
 	

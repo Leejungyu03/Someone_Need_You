@@ -16,12 +16,26 @@ public class UserBO {
 		return userDAO.existUserByLoginId(loginId);
 	}
 	
+	public User getUserByUserId(int userId) {
+		return userDAO.selectUserByUserId(userId);
+	}
+	
 	public User getUserByLoginIdAndPassword(String loginId, String password) {
 		return userDAO.selectUserByLoginIdAndPassword(loginId, password);
 	}
 	
+	
 	public int addSignUpUser(String loginId, String password, String email, String name) {
 		return userDAO.insertSignUpUser(loginId, password, email, name);
 	}
+	
+	public int modifyUserByUserId(int userId, String modifyUserId, String modifyPassword, String modifyEmail, String modifyName) {
+		return userDAO.updateUserByUserId(userId, modifyUserId, modifyPassword, modifyEmail, modifyName);
+	}
+	
+	public int deleteUserByUserId(int userId) {
+		return userDAO.deleteUserByUserId(userId);
+	}
+
 	
 }

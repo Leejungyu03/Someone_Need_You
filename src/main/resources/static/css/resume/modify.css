@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+body {
+  background-color: #E8ECEF;
+}
+.inner {
+  width: 1100px;
+  position: relative;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 50px 0 10px 0;
+}
+
+.resume-modify {
+  width: 100%;
+}
+.resume-modify .logo {
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #519259;
+}
+.resume-modify .logo .logo__text {
+  font-size: 60px;
+  font-family: "Do Hyeon";
+  color: #519259;
+  cursor: pointer;
+}
+.resume-modify .oneLineIntroduction {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  margin-top: 40px;
+  border: 2px solid #519259;
+  display: flex;
+}
+.resume-modify .oneLineIntroduction input[type ="text"] {
+  font-size: 30px;
+}
+
+.resume-modify .personalData {
+  height: 180px;
+  background-color: #fff;
+  border: 2px solid #519259;
+  display: flex;
+}
+.resume-modify .personalData .profile {
+  width: 18%;
+  height: 120px;
+}
+.resume-modify .personalData .profile img {
+  width: 130px;
+  max-height: 130px;
+  background-color: #F6F6F6;
+  margin-top: 20px;
+  margin-left: 30px;
+  border: 3px solid #333;
+  box-sizing: border-box;
+}
+.resume-modify .personalData .profile input[type="file"] {
+  display: none;
+}
+.resume-modify .personalData .data {
+  
+}
+.resume-modify .personalData .data div {
+  margin-top: 20px;
+}
+.resume-modify .personalData .data input {
+  margin-left: 40px;
+  border: 2px solid #C8C6C6;
+}
+.resume-modify .personalData .data #name {
+  width: 130px;
+  padding: 15px 10px;
+  font-size: 20px;
+}
+.resume-modify .personalData .data #birth {
+  width: 240px;
+  padding: 15px 5px;
+  font-size: 20px;
+}
+.resume-modify .personalData .data #email {
+  width: 350px;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+.resume-modify .personalData .data #gender {
+  width: 130px;
+  margin-left: 40px;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+.resume-modify .personalData .data #phoneNumber {
+  width: 180px;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+.resume-modify .personalData .data #residence {
+  width: 410px;
+  padding: 15px 10px;
+  font-size: 18px;
+}
+
+.resume-modify .education {
+  background-color: #fff;
+  border: 2px solid #519259;
+}
+.resume-modify .education .school {
+  height: 90px;
+}
+.resume-modify .education .school #school__classification {
+  width: 150px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 120px;
+  margin-top: 15px;
+}
+.resume-modify .education .school #school__name {
+  width: 400px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+.resume-modify .education .school #school__graduation-year {
+  width: 180px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 50px;
+  margin-top: 15px;
+} 
+.resume-modify .education .education__add {
+  height: 50px;
+  background-color: #fff;
+  border-top: 1px solid #C8C6C6;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.resume-modify .education .education__add .material-icons {
+  margin-top: 10px;
+  font-size: 28px;
+  color: #4D96FF;
+}
+.resume-modify .education .education__add div {
+  margin-top: 6px;
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.resume-modify .career {
+  background-color: #fff;
+  border: 2px solid #519259;
+}
+.resume-modify .career .career__company {
+  
+}
+.resume-modify .career .career__company .company-info  {
+
+}
+.resume-modify .career .career__company .company-info .companyName {
+  width: 460px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 35px;
+  margin-top: 15px;
+}
+.resume-modify .career .career__company .company-info .startPeriod {
+  width: 240px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 105px;
+  margin-top: 15px;
+}
+.resume-modify .career .career__company .company-info .endPeriod {
+  width: 240px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.resume-modify .career .career__company .company-info {
+
+}
+.resume-modify .career .career__company .career__task {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.resume-modify .career .career__company .career__task textarea {
+  resize: none;
+  padding: 10px 10px;
+}
+.resume-modify .career .career__add {
+  height: 50px;
+  background-color: #fff;
+  border-top: 1px solid #C8C6C6;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.resume-modify .career .career__add .material-icons {
+  margin-top: 10px;
+  font-size: 28px;
+  color: #4D96FF;
+}
+.resume-modify .career .career__add div {
+  margin-top: 6px;
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.resume-modify .license {
+  background-color: #fff;
+  border: 2px solid #519259;
+}
+.resume-modify .license .license__info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.resume-modify .license .license__info .license__name {
+  width: 400px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.resume-modify .license .license__info .license__publication {
+  width: 320px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 50px;
+}
+.resume-modify .license .license__info .license__date {
+  width: 200px;
+  padding: 12px 10px;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.resume-modify .license .license__add {
+  height: 50px;
+  background-color: #fff;
+  border-top: 1px solid #C8C6C6;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.resume-modify .license .license__add .material-icons {
+  margin-top: 10px;
+  font-size: 28px;
+  color: #4D96FF;
+}
+.resume-modify .license .license__add div {
+  margin-top: 6px;
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.resume-modify .portfolio {
+  background-color: #fff;
+  border: 2px solid #519259;
+}
+.resume-modify .portfolio .portfolio__url {
+  width: 530px;
+  padding: 15px 10px;
+  font-size: 15px;
+  margin-left: 50px;
+}
+.resume-modify .portfolio label {
+  padding: 18px 180px;
+  border: 1px solid #333;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 10px;
+  background-color: #F9FCFF;
+}
+.resume-modify .portfolio label div {
+  
+}
+.resume-modify .portfolio label div .material-icons {
+  padding-left: 10px;
+}
+.resume-modify .portfolio input[type="file"] {
+  display: none;
+}
+
+.resume-modify .introduce {
+  height: 250px;
+  background-color: #fff;
+  border: 2px solid #519259;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.resume-modify .introduce textarea {
+  margin-top: 20px;
+  padding: 5px 5px;
+  resize: none;
+}
+
+.resume-modify button {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 70px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  background-color: transparent;
+  border: 3px solid #519259;
+}
+.resume-modify button:hover {
+  color: #fff;
+  background-color: #519259;
+}

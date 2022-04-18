@@ -79,7 +79,13 @@ $(document).ready(function() {
 		} else if (listText == "회사 목록") {
 		    location.href = "/main/company_list_view"
 		} else if (listText == "마이페이지") {
-		    location.href = "/user/mypage_view"
+			let userName = "${userName}"
+			if (userName == "") {
+				alert("로그인 후 이용해주세요")
+				location.href = "/account/sign_in_view"
+			} else {
+			    location.href = "/user/mypage_view"
+			}
 		} else {
 		    location.href = "/company/info_view"
 		}

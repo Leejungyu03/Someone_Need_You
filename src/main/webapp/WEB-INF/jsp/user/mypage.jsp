@@ -145,15 +145,23 @@ $(document).ready(function() {
 			}
 	  })
 	})
+	
+	$('.modifyResumeBtn').on('click', () => {
+		$.ajax({
+			type : "POST",
+			url : "/resume/add",
+			success : function() {
+				location.href = "/resume/modify_view"
+			},
+			error : function() {
+				alert("오류입니다. 관리자에게 문의주세요")
+			}
+		})
+	})
 
 	// 내가 지원한 채용공고 확인하기
 	$('.applyCompanyListBtn').on('click', () => {
 	  location.href = "/resume/apply_list_view"
-	})
-
-	// 이력서 수정하러 가기
-	$('.modifyResumeBtn').on('click', () => {
-	  location.href = "/resume/modify_view"
 	})
 
 	// 이력서 미리보기

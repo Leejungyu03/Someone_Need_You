@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.SNY.resume.dao.ResumeEducationDAO">
+
+	<select id="selectResumeEducationByResumeId" parameterType="int" resultType="com.SNY.resume.model.ResumeEducation">
+		SELECT
+			`id`
+			,`resumeId`
+			,`classification`
+			,`name`
+			,`graduation`
+			,`createdAt`
+			,`updatedAt`
+		FROM
+			`resume_education`
+		WHERE
+			`resumeId` = #{resumeId}
+		ORDER BY `graduation` ASC
+	</select>
+
+
+	<insert id="insertResumeEducationByResumeId" parameterType="map">
+		INSERT INTO `resume_education`
+		(
+			`resumeId`
+			,`classification`
+			,`name`
+			,`graduation`
+			,`createdAt`
+			,`updatedAt`
+		)
+		VALUES
+		(
+			#{resumeId}
+			,#{classification}
+			,#{name}
+			,#{graduation}
+			,NOW()
+			,NOW()
+		)
+	</insert>
+	
+	<delete id="deleteResumeEducationById" parameterType="int">
+		DELETE FROM `resume_education`
+		WHERE
+			`id` = #{resumeEducationId}
+	</delete>
+</mapper>

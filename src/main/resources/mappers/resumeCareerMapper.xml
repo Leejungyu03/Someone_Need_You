@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="com.SNY.resume.dao.ResumeCareerDAO">
+ 
+ 	<select id="selectResumeCareerByResumeId" parameterType="int" resultType="com.SNY.resume.model.ResumeCareer">
+ 		SELECT 
+ 			`id`
+ 			,`resumeId`
+			,`companyName`
+			,`startPeriod`
+			,`endPeriod`
+			,`task`
+			,`createdAt`
+			,`updatedAt`
+		FROM
+			`resume_career`
+		WHERE
+			`resumeId` = #{resumeId}
+ 	</select>
+ 
+ 	<insert id="insertResumeCareerByResumeId" parameterType="map">
+ 		INSERT INTO `resume_career`
+ 		(
+ 			`resumeId`
+			,`companyName`
+			,`startPeriod`
+			,`endPeriod`
+			,`task`
+			,`createdAt`
+			,`updatedAt`
+ 		)
+ 		VALUES
+ 		(
+ 			#{resumeId}
+ 			,#{companyName}
+ 			,#{startPeriod}
+ 			,#{endPeriod}
+ 			,#{task}
+ 			,NOW()
+ 			,NOW()
+ 		)
+ 	</insert>
+ 	
+ 	<delete id="deleteResumeCareerById" parameterType="int">
+ 		DELETE FROM `resume_career`
+ 		WHERE 
+ 			`id` = #{resumeCareerId}
+ 	</delete>
+ </mapper>

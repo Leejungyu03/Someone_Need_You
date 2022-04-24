@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.SNY.resume.dao.ResumeDAO">
+	<select id="existResumeByUserId" parameterType="int" resultType="int">
+		SELECT
+			COUNT(1)
+		FROM
+			`user_resume`
+		WHERE
+			`userId` = #{userId}
+	</select>
+	
+	 <select id="selectResumeByUserId" parameterType="int" resultType="com.SNY.resume.model.Resume">
+ 		SELECT
+ 			`id`
+			,`userId`
+			,`oneLineIntroduction`
+			,`birth`
+			,`gender`
+			,`phoneNumber`
+			,`profile`
+			,`portfolio_url`
+			,`portfolio_file`
+			,`introduce`
+			,`createdAt`
+			,`updatedAt`
+		FROM
+			`user_resume`
+		WHERE
+			`userId` = #{userId}
+ 	</select>
+
+
+	<insert id="insertEarlyResumeByUserId" parameterType="int">
+		INSERT INTO `user_resume`
+		(
+			`userId`,
+			`createdAt`
+		)
+		VALUES
+		(
+			#{userId},
+			NOW()
+		)
+	</insert>
+</mapper>

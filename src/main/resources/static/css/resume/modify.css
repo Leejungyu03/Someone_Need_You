@@ -125,7 +125,7 @@ h2 {
   margin-left: 50px;
   margin-top: 15px;
 }
-.resume-modify .education .school #school__graduation-year {
+.resume-modify .education .school #school__graduation {
   width: 180px;
   padding: 12px 10px;
   font-size: 18px;
@@ -151,10 +151,122 @@ h2 {
   font-size: 22px;
   font-weight: 600;
 }
-
+.resume-modify .education .school-list {
+	height: 80px;
+	border-bottom: 1px solid #C8C6C6;
+	position: relative;
+	display: flex;
+}
+.resume-modify .education .school-list .school-list__classification  {
+	width: 150px;
+	height: 52px;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #519259;
+	margin-left: 120px;
+	margin-top: 10px;
+	border: 1px solid #767676;
+}
+.resume-modify .education .school-list .school-list__name {
+	width: 400px;
+	height: 52px;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #519259;
+	margin-left: 55px;
+	margin-top: 15px;
+	border: 1px solid #767676;
+}
+.resume-modify .education .school-list .schoo-list__graduation-year {
+	width: 180px;
+	height: 52px;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 20px;
+	font-weight: 600;
+	color: #519259;
+	margin-left: 53px;
+	margin-top: 15px;
+	border: 1px solid #767676;
+}
+.resume-modify .education .school-list .school-list__delete {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	font-size: 30px;
+	padding: 10px 10px;
+	background-color: #BBBBBB;
+	cursor: pointer;
+}
 .resume-modify .career {
   background-color: #fff;
   border: 2px solid #519259;
+}
+.resume-modify .career .career-list {
+	height: 248px;
+	border-bottom: 1px solid #C8C6C6;
+	position: relative;
+}
+.resume-modify .career .career-list .career-info {
+	display: flex;
+}
+.resume-modify .career .career-list .career-list__companyName  {
+	width: 480px;
+	height: 52px;
+	padding: 8px 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #519259;
+	margin-left: 15px;
+	margin-top: 15px;
+	border: 1px solid #767676;
+}
+.resume-modify .career .career-list .career-list__startPeriod  {
+	width: 220px;
+	height: 52px;
+	padding: 8px 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #519259;
+	margin-left: 85px;
+	margin-top: 15px;
+	border: 1px solid #767676;
+}
+.resume-modify .career .career-list .career-list__endPeriod  {
+	width: 220px;
+	height: 52px;
+	padding: 8px 10px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #519259;
+	margin-left: 10px;
+	margin-top: 15px;
+	border: 1px solid #767676;
+}
+.resume-modify .career .career-list .career-list__task  {
+	width: 1060px;
+	height: 142px;
+	padding: 8px 10px;
+	font-size: 16px;
+	color: #519259;
+	margin-left: 12px;
+	margin-top: 20px;
+	border: 1px solid #767676;
+}
+.resume-modify .career .career-list .career-list__delete  {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-align: center;
+	font-size: 30px;
+	padding: 10px 10px;
+	background-color: #BBBBBB;
+	cursor: pointer;
 }
 .resume-modify .career .career__company {
   
@@ -162,21 +274,21 @@ h2 {
 .resume-modify .career .career__company .company-info  {
 
 }
-.resume-modify .career .career__company .company-info .companyName {
-  width: 460px;
+.resume-modify .career .career__company .company-info #companyName {
+  width: 480px;
   padding: 12px 10px;
   font-size: 18px;
-  margin-left: 35px;
+  margin-left: 15px;
   margin-top: 15px;
 }
-.resume-modify .career .career__company .company-info .startPeriod {
+.resume-modify .career .career__company .company-info #startPeriod {
   width: 240px;
   padding: 12px 10px;
   font-size: 18px;
-  margin-left: 105px;
+  margin-left: 85px;
   margin-top: 15px;
 }
-.resume-modify .career .career__company .company-info .endPeriod {
+.resume-modify .career .career__company .company-info #endPeriod {
   width: 240px;
   padding: 12px 10px;
   font-size: 18px;
@@ -223,19 +335,19 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.resume-modify .license .license__info .license__name {
+.resume-modify .license .license__info #license__name {
   width: 400px;
   padding: 12px 10px;
   font-size: 18px;
   margin-left: 50px;
 }
-.resume-modify .license .license__info .license__publication {
+.resume-modify .license .license__info #license__publication {
   width: 320px;
   padding: 12px 10px;
   font-size: 18px;
   margin-left: 50px;
 }
-.resume-modify .license .license__info .license__date {
+.resume-modify .license .license__info #license__date {
   width: 200px;
   padding: 12px 10px;
   font-size: 18px;
